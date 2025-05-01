@@ -1,0 +1,229 @@
+/* Temel Sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh; /* Sayfa yüksekliğini en az ekran boyutunda yap */
+    display: flex;
+    flex-direction: column;
+}
+
+/* A Linkleri için Genel Ayar */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Liste Stili */
+ul {
+    list-style: none;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffc107;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffc107;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #ffc107;
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffd700;
+}
+
+/* ARAÇLAR */
+.tools-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tools-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ffc107;
+}
+
+.tool-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Kartlar arasındaki boşluğu arttırdım */
+    flex-wrap: wrap;
+    margin-top: 40px; /* Üstten biraz boşluk ekledim */
+}
+
+.card {
+    background-color: #2c2c2c;
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    text-align: center;
+    margin-bottom: 30px; /* Alt kısımdan biraz daha fazla boşluk bırakıldı */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+
+/* İletişim Sayfası */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #ffdb4d;
+}
+
+/* ALT KISIM (Footer) */
+footer {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    width: 100%;
+    margin-top: auto; /* Sayfa içeriği uzun olduğunda footer alt kısma itilecek */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Alt yazıyı şerit şeklinde sabitlemek için */
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Alt yazı özel stil */
+footer .copyright {
+    font-weight: bold;
+    color: #fff;
+}
+
+footer .developer {
+    font-style: italic;
+    color: #ffd700;
+}
+
+/* ARAÇLAR Başlık Düzenlemesi */
+#tools h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ffc107;
+    text-align: center; /* Başlık metnini ortalar */
+    font-weight: bold; /* Başlık kalın olacak şekilde */
+    width: 100%; /* Tam genişlik kullanarak ortalama */
+    margin-left: auto; /* Otomatik sol boşluk */
+    margin-right: auto; /* Otomatik sağ boşluk */
+}
