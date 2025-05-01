@@ -227,3 +227,89 @@ footer .developer {
     margin-left: auto; /* Otomatik sol boşluk */
     margin-right: auto; /* Otomatik sağ boşluk */
 }
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Yatayda kalsın */
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .tool-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .tools-section h2,
+    #tools h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        padding: 8px 15px;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+
+    footer p {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
